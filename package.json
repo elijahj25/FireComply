@@ -1,0 +1,26 @@
+{
+  "name": "firecomploy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Digital compliance records for commercial kitchen exhaust systems",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.jsx",
+    "deploy:functions": "supabase functions deploy notify-overdue && supabase functions deploy push-send",
+    "secrets": "echo 'Run: supabase secrets set RESEND_API_KEY=... VAPID_PUBLIC_KEY=... VAPID_PRIVATE_KEY=... VAPID_EMAIL=... APP_URL=...'"
+  },
+  "dependencies": {
+    "jspdf": "^2.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "vite": "^4.3.2",
+    "vite-plugin-pwa": "^0.16.4"
+  }
+}
