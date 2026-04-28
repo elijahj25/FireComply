@@ -3,8 +3,8 @@ import { useState, useEffect, useCallback } from "react";
 // ─── SUPABASE CLIENT ──────────────────────────────────────────────────────────
 // Replace these with your actual Supabase project values
 // Dashboard → Settings → API
-const SUPABASE_URL = "https://YOUR_PROJECT.supabase.co";
-const SUPABASE_ANON_KEY = "YOUR_ANON_KEY";
+const SUPABASE_URL = "https://qmawynvmlsrgvxfohojx.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFtYXd5bnZtbHNyZ3Z4Zm9ob2p4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyMzc3ODcsImV4cCI6MjA5MjgxMzc4N30.I4UDItuUHaKa4JFbESjuIXruG18M2bBOfGXYZqMSiMM";
 
 // Minimal Supabase client (no SDK dependency)
 const supabase = {
