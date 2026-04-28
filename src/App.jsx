@@ -25,7 +25,7 @@ const supabase = {
       const res = await fetch(`${SUPABASE_URL}/auth/v1/otp`, {
         method: "POST",
         headers: { "Content-Type": "application/json", "apikey": SUPABASE_ANON_KEY },
-        body: JSON.stringify({ email, create_user: true }),
+        body: JSON.stringify({ email }),
       });
       return res.ok ? { error: null } : { error: await res.json() };
     },
